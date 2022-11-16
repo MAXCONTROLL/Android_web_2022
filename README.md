@@ -1,3 +1,3 @@
 # Android_web_2022
 
-ask-answer service (web project)
+question-answer service (web project)
