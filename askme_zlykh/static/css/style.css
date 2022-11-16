@@ -16,21 +16,42 @@
 }
 
 .avatar {
-    width: 80px;
-    height: 80px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     border: 1px solid black;
     overflow: hidden;
 }
 .avatar-user {
-    width: 36px;
-    height: 36px;
-    border-radius: 20%;
-    border: 1px solid white;
+    width: 55px;
+    height: 40px;
+    border-radius: 100%;
+
     overflow: hidden;
 }
 
+.avatar-user > img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-question {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+}
 .avatar > img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-question > img {
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -51,5 +72,9 @@
 .wrap {
     display: flex;
     flex-wrap: wrap;
+}
+
+.like {
+    justify-content: center;
 }
 

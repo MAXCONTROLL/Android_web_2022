@@ -12,17 +12,43 @@
 
 </head>
 <body class="d-flex flex-column h-100">
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AskMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
 
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                    <button class="btn btn-outline-light me-5">Ask</button>
+                    <div class="avatar-user me-2 ms-2">
+                        <img src="../static/img/avatar2%20(4).jpg" class=" " alt="">
+                    </div>
 
+                    <span class="text-light text-center me-2">Adam</span><br>
+                    <span class="text-light text-center me-2"><a href="#" class="text-primary text-decoration-none">settings</a> </span>
+                    <br>
+                    <span class="text-light text-center me-1"><a href="#" class="text-primary text-decoration-none nowrap">logout</a> </span>
 
-
+            </div>
+        </div>
+    </nav>
+</header>
 <!-- Begin page content -->
 <main class="flex-shrink-0">
     <div class="container">
 
         <span class="col-3 h2 ">Settings:</span>
         <span class="col-3 h2 ">Dr. Pepper</span>
-
 
         <div class="row mt-3">
             <div class="col-8">
@@ -50,25 +76,11 @@
                         <div class="invalid-feedback">Sorry, this nickName already registered.</div>
                     </div>
 
-                    <div class="mb-2">
-                        <label for="password-input" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password-input" placeholder="Enter your password here" name="password" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Sorry, password should contain minimum 10 characters.</div>
-                    </div>
-
-                    <div class="mb-2">
-                        <label for="password-input-repeat" class="form-label">Repeat password</label>
-                        <input type="password" class="form-control" id="password-input-repeat" placeholder="Enter your password here" name="password" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Sorry, passwords do not match.</div>
-                        <label><input type="checkbox" class="password-checkbox mt-2"> Show password</label>
-                    </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Upload avatar</label>
                         <input class="form-control" type="file" id="formFile">
                     </div>
-                    <button type="button" class="btn btn-dark mb-2 mt-2">Register!</button>
+                    <button type="button" class="btn btn-dark mb-2 mt-2">Save!</button>
 
                 </form>
 

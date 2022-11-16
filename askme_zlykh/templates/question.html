@@ -10,21 +10,47 @@
     <link href="../static/css/style.css/" rel="stylesheet" >
 </head>
 <body>
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AskMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                    <button class="btn btn-outline-light me-5">Ask</button>
+
+                    <span class="text-light text-center me-2"><a href="#" class="text-primary text-decoration-none">login</a> </span>
+                    <br>
+                    <span class="text-light text-center me-1"><a href="#" class="text-primary text-decoration-none nowrap">register</a> </span>
+
+            </div>
+        </div>
+    </nav>
+</header>
 <!-- Begin page content -->
 <main class="flex-shrink-0">
     <div class="container">
-
 
         <div class="row">
             <div class="col-8">
                 <div class="question">
                     <div class="row">
-                        <div class="col-2">
-                            <div class="avatar">
-                                <img src="../static/img/avatar2%20(3).jpg" alt="">
+                        <div class="col-3">
+                            <div class="avatar-question">
+                                <img src="../static/img/avatar2%20(6).jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-10">
+                        <div class="col-9">
                             <h2 class="question_title">How to build a moon park?</h2>
                             <div class="question-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis, dolor dolorem ducimus excepturi harum saepe sequi veritatis. Eius, nulla?
@@ -32,14 +58,14 @@
                         </div>
                     </div>
                     <div class="row mt-2">
-                        <div class="col-2">
-                            <div class="like">
-                                <button class="btn btn-block btn-primary">Like</button>
-                                <button class="btn btn-block btn-primary">Dislike</button>
+                        <div class="col-3">
+                            <div class="like text-center">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>+6</span>
+                                <i class="fas fa-arrow-up"></i>
                             </div>
                         </div>
-                        <div class="col-10">
-
+                        <div class="col-9">
 
                             <span>Tags:</span>
                             <a href="#" class="text-decoration-none">black-jack</a>
@@ -64,9 +90,10 @@
                     </div>
                     <div class="row">
                         <div class="col-2">
-                            <div class="like">
-                                <button class="btn btn-block btn-primary">Like</button>
-                                <button class="btn btn-block btn-primary">Dislike</button>
+                            <div class="like text-center">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>+6</span>
+                                <i class="fas fa-arrow-up"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -93,9 +120,10 @@
                     </div>
                     <div class="row">
                         <div class="col-2">
-                            <div class="like">
-                                <button class="btn btn-block btn-primary">Like</button>
-                                <button class="btn btn-block btn-primary">Dislike</button>
+                            <div class="like text-center">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>+6</span>
+                                <i class="fas fa-arrow-up"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -122,9 +150,10 @@
                     </div>
                     <div class="row">
                         <div class="col-2">
-                            <div class="like">
-                                <button class="btn btn-block btn-primary">Like</button>
-                                <button class="btn btn-block btn-primary">Dislike</button>
+                            <div class="like text-center">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>+6</span>
+                                <i class="fas fa-arrow-up"></i>
                             </div>
                         </div>
                         <div class="col-10">
@@ -151,9 +180,8 @@
 
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your answer here." name="text" required></textarea>
 
-
                 </div>
-                <button type="button" class="btn btn-dark mb-2">Answer!</button>
+                <button type="button" class="btn btn-dark mb-4">Answer!</button>
 
             </div>
             <div class="col-4">
@@ -187,5 +215,8 @@
         <span class="text-muted">Place sticky footer content here.</span>
     </div>
 </footer>
+
+<script src="https://kit.fontawesome.com/24bb07159b.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
