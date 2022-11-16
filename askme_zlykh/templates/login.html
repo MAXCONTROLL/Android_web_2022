@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ask</title>
+    <title>Login</title>
+
 
     <link href="../static/css/bootstrap.css/" rel="stylesheet" >
     <link href="../static/css/style.css/" rel="stylesheet" >
+
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -17,33 +19,31 @@
 <!-- Begin page content -->
 <main class="flex-shrink-0">
     <div class="container">
-
-        <span class="col-3 h2">New question</span>
-
+        <div class="row">
+            <span class="col-3 h2">Log in</span>
+        </div>
 
         <div class="row mt-3">
             <div class="col-8">
 
                 <form action="/action_page.php" class="was-validated">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="How to build a moon park?" name="title" required>
+                    <div class="mb-2">
+                        <label for="login" class="form-label">Login</label>
+                        <input type="text" class="form-control" id="login" placeholder="Enter your login here" name="title" required>
                         <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <div class="invalid-feedback">Sorry, wrong login.</div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Text</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Really how? Have no idea about it" name="text" required></textarea>
+
+                    <div class="mb-2">
+                        <label for="password-input" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password-input" placeholder="Enter your password here" name="password" required>
+
                         <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <div class="invalid-feedback">Sorry, wrong password.</div>
+                        <label><input type="checkbox" class="password-checkbox mt-2"> Show password</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Tags</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="moon, park, pazzle" name="tags" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                    <button type="button" class="btn btn-dark">Ask!</button>
+                    <button type="button" class="btn btn-dark mb-2 mt-2">Log in!</button>
+                    <div><a href="#" class="text-decoration-none">create new account</a></div>
                 </form>
 
             </div>
@@ -77,5 +77,10 @@
         <span class="text-muted">Place sticky footer content here.</span>
     </div>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+  integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+  crossorigin="anonymous"></script>
+<script src="../static/js/password_check_btn.js"></script>
 </body>
 </html>

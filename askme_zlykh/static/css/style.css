@@ -9,12 +9,24 @@
     margin-bottom: 20px;
 }
 
+.answer {
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 
 .avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.avatar-user {
+    width: 36px;
+    height: 36px;
+    border-radius: 20%;
+    border: 1px solid white;
     overflow: hidden;
 }
 
@@ -28,7 +40,16 @@
 .question-text {
     overflow: hidden;
 }
+.answer-text {
+    border: 2px solid ;
+    border-radius: 10%;
+    overflow: hidden;
+}
 .btn.btn-outline-success {
     margin-left: 8px;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
